@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<configure style="ROW" begin="2" modal="V+积分团队排名.xls">
+ 	<fieldMapping columnIndex="0" fieldName="userEmail" labelName="邮箱" />
+ 	<fieldMapping columnIndex="1" fieldName="userName" labelName="姓名	" />
+	<fieldMapping columnIndex="2" fieldName="user_age" labelName="年龄" />
+</configure>  
