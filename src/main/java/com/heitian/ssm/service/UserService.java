@@ -11,4 +11,5 @@ public interface UserService {
     List<User> getAllUser();
     List<Map<String ,Object>> getall();
 
+    void add(List<Object> objects);
 }

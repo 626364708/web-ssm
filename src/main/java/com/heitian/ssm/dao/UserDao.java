@@ -21,4 +21,6 @@ public interface UserDao {
     List<User> selectAllUser();
 
     List<Map<String ,Object>> getall();
+
+   void add(Object object);
 }

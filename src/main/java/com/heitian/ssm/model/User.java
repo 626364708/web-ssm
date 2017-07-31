@@ -7,7 +7,7 @@ import java.util.Date;
  */
 public class User {
 
-    private Long id;
+    private String id;
     private String userName;
     private String userPhone;
     private String userEmail;
@@ -26,11 +26,11 @@ public class User {
         this.user_age = user_age;
     }
 
-    public Long getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -97,4 +97,21 @@ public class User {
     public void setIsDelete(Short isDelete) {
         this.isDelete = isDelete;
     }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id='" + id + '\'' +
+                ", userName='" + userName + '\'' +
+                ", userPhone='" + userPhone + '\'' +
+                ", userEmail='" + userEmail + '\'' +
+                ", userPwd='" + userPwd + '\'' +
+                ", pwdSalt='" + pwdSalt + '\'' +
+                ", createTime=" + createTime +
+                ", modifyTime=" + modifyTime +
+                ", isDelete=" + isDelete +
+                ", user_age='" + user_age + '\'' +
+                '}';
+    }
+
 }

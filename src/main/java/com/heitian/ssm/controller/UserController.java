@@ -81,6 +81,8 @@ public class UserController {
     @ResponseBody
     public Map<String, Object> showUser(HttpServletRequest request, Model model, HttpSession session) {
 
+        String s1 = request.getParameter("userName"); //为前段的 name=“userName” 里的值
+
 
         log.info("开始");
         List<Map<String ,Object>> list=userService.getall();
@@ -164,7 +166,8 @@ public class UserController {
     public String Save(@ModelAttribute("form") User user, Model model) {
         model.addAttribute("user", user);
         System.out.println("哈哈");
-        return "detail";
+//        return "detail";
+        return "FileUpload";
     }
 
 }

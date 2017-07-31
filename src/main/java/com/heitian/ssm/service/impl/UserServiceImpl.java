@@ -29,4 +29,10 @@ public class UserServiceImpl implements UserService {
     }
 
 
+
+    public void add(List<Object> objects) {
+        for (Object object : objects) {
+                     userDao.add(object);
+        }
+    }
 }
