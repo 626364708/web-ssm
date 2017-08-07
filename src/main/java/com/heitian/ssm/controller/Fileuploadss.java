@@ -21,7 +21,7 @@ import java.util.*;
  */
 @RequestMapping(value = "/fileup")
 @Controller
-public class Fileupload {
+public class Fileuploadss {
 
     @RequestMapping(value = "/test")
     public String Testfileupload(HttpServletRequest request) throws Exception {
